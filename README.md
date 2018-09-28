@@ -71,4 +71,4 @@ The King of Limbs { amnesiac:
 
 This is happening because one of the dependencies, `amensiac`, is importing and mutating `kida`, which we too happen to be using in our scripts.
 
-Even though programs are almost always written with imports first, statements afterwards (as in script `a`), projects are also usually pretty big, spanning several files and directories, and we have very little control over the order in which dependencies are imported (more similar to script `b`).
+Even though programs are almost always written with imports first, statements afterwards (as in script `a`), projects are also usually pretty big, spanning several files and directories, and we have very little control over the order in which dependencies are imported (more similar to script `b`). Add Webpack, Babel and TypeScript to the mix and you've got a recipe for disaster.
