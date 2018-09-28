@@ -2,6 +2,8 @@
 
 This is a small project showcasing what happens when you mutate an import.
 
+## Example of a mutation of an import
+ 
 ```js
 import * as jsonld from 'jsonld'
 
@@ -21,11 +23,11 @@ These two scripts do exactly the same: require three dependencies and `console.l
 They only differ in one aspect: script `a` first imports the three dependencies, then logs them.
 
 ```js
-const kidA = require('kida')
+const kida = require('kida')
 const amnesiac = require('amnesiac')
 const thekingoflimbs = require('thekingoflimbs')
 
-console.log('Kid A', kidA)
+console.log('Kid A', kida)
 console.log('Amnesiac', amnesiac)
 console.log('The King of Limbs', thekingoflimbs)
 ```
@@ -33,9 +35,9 @@ console.log('The King of Limbs', thekingoflimbs)
 Script `b` imports one dependency, then logs it, imports the next one, and so on.
 
 ```js
-const kidA = require('kida')
+const kida = require('kida')
 
-console.log('Kid A', kidA)
+console.log('Kid A', kida)
 
 const amnesiac = require('amnesiac')
 
